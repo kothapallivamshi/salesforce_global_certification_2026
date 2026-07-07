@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Street Light Scheduler</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Smart Street Light Scheduler</h1>
+
+    <p>
+        Dynamic Alternating Lighting System
+    </p>
+
+    <div class="controls">
+
+        <label>Select Day</label>
+
+        <select id="day">
+            <option value="1">Monday</option>
+            <option value="2">Tuesday</option>
+            <option value="3">Wednesday</option>
+            <option value="4">Thursday</option>
+            <option value="5">Friday</option>
+            <option value="6">Saturday</option>
+            <option value="7">Sunday</option>
+        </select>
+
+        <br><br>
+
+        <label>
+            <input type="checkbox" id="holiday">
+            Holiday
+        </label>
+
+        <br><br>
+
+        <button onclick="showLights()">
+            Generate Schedule
+        </button>
+
+    </div>
+
+    <div class="lights">
+
+        <div class="light" id="L1">1</div>
+        <div class="light" id="L2">2</div>
+        <div class="light" id="L3">3</div>
+        <div class="light" id="L4">4</div>
+        <div class="light" id="L5">5</div>
+        <div class="light" id="L6">6</div>
+        <div class="light" id="L7">7</div>
+
+    </div>
+
+    <div id="result"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
